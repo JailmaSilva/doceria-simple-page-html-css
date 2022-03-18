@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - Doceria doce sonhos</title>
+        <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="imagens/logo.png" alt="Logo da doceria doce sonhos"></h1>
+<!-- O link <a> target "_blank abrir em outra página"-->
+<!--O Elemento HTML de Navegação ( <nav>) representa uma seção de uma página ou páginas que aponta para outras áreas da página, ou seja, uma seção com links de navegação.-->
+				<nav>
+					<ul>
+						<li><a href="index.html" target="_blank">Home</a></li>
+						<li><a href="produtos.html" target="_blank">Produtos</a></li>
+						<li><a href="contato.html" target="_blank">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main> <!--O elemento <main> define o conteúdo principal dentro do <body> em seu documento ou aplicação. -->
+			<form> <!--O elemento HTML<form> representa uma seção de um documento que contém controles interativos que permitem ao usuário submedidor de um determinado servidor web.-->
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+
+				<fieldset> <!--O elemento HTML <fieldset> é usado para agrupar elementos, assim como labels ( <label> ), dentro de um formulário web.-->
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+			<table>
+				<tr>
+					<td>Dia</td>
+					<td>Horário</td>
+				</tr>
+				<tr>
+					<td>Segunda</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Quarta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td>Sexta</td>
+					<td>8h ~ 20h</td>
+				</tr>
+			</table>
+		</main>
+
+		<footer>
+			<img src="imagens/logo.png" alt="Logo da doceria doce sonhos">
+			<p class="copyright">&copy; Copyright Doceria Doce sonhos - 2001</p>
+		</footer>
+	</body>
+</html>
